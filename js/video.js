@@ -13,6 +13,7 @@ window.addEventListener("load", function() {
 	document.getElementById("play").addEventListener("click", function() {
 		console.log("Play Video");
 		video.play();
+		document.getElementById("volume").innerHTML = "100%";
 	});
 
 	document.getElementById("pause").addEventListener("click", function() {
