@@ -55,7 +55,6 @@ window.addEventListener("load", function() {
 	});
 
 	document.getElementById("slider").addEventListener("input", function() {
-		console.log("Volume Changed");
 		video.volume = this.value / 100;
 		document.getElementById("volume").innerHTML = this.value + "%";
 		console.log("The current value is " + video.volume);
