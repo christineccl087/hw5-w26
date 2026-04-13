@@ -9,11 +9,12 @@ window.addEventListener("load", function() {
 	console.log("Auto play is set to False");
 	video.loop = false;
 	console.log("Loop is set to False")
+	video.volume = 1;
+	document.getElementById("volume").innerHTML = "100%";
 
 	document.getElementById("play").addEventListener("click", function() {
 		console.log("Play Video");
 		video.play();
-		document.getElementById("volume").innerHTML = "100%";
 	});
 
 	document.getElementById("pause").addEventListener("click", function() {
